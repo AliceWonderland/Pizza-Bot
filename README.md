@@ -2,22 +2,22 @@
 Pizza bot gets a list of houses to deliver pizzas to! Yum, pizza!
 
 ### Installation
-Install NPM v5.6.0+ and Node v8.9.4+ https://nodejs.org/en/download/
+Install [NPM v5.6.0+ and Node v8.9.4+](https://nodejs.org/en/download/)
 
 Open Command Line Terminal:
 
 Create directory for files, browse to directory
 
-Clone down Git Repo `git clone https://github.com/AliceWonderland/Pizza-Bot.git`. Browse to `Pizza-Bot' folder.
+Clone down Git Repo `git clone https://github.com/AliceWonderland/Pizza-Bot.git` or unpack files `link to zip`
 
-Or unpack files `link to zip`
+Browse to `Pizza-Bot` folder.
 
 Install packages using NPM `npm install`
 
 Run tests `npm run test`
 
 ### Tools & Technologies
-* Javascript
-* Node
-* NPM
-* Jest
+* Language: Javascript https://developer.mozilla.org/en-US/docs/Web/JavaScript
+* Environment: Node https://nodejs.org
+* Package Manager: NPM https://www.npmjs.com/
+* Test Suite: Jest https://facebook.github.io/jest/en/
