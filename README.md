@@ -10,7 +10,7 @@ Create directory for files, browse to directory
 
 Clone down Git Repo `git clone https://github.com/AliceWonderland/Pizza-Bot.git`. Browse to `Pizza-Bot` folder.
  
-Or unpack files `link to zip`
+Or unpack these files [pizzabot.tar.gz](https://github.com/AliceWonderland/Pizza-Bot/blob/master/assets/pizzabot.tar.gz)
 
 Install packages using NPM `npm install`
 
