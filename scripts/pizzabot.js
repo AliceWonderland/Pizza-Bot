@@ -8,7 +8,7 @@ function goPizzaBot(input){ //return route
 	if(!checkInputFormat(input))
 		return 'Pizzabot Error! Check your input, please.';
 
-
+	// make delivery route
 	const grid = input[0];
 	const deliveries = getDeliveries(input);
 	let origin = [0,0];
@@ -81,8 +81,6 @@ function checkInputFormat(input){
 
 	let openIndex=0;
 	for(let i=1; i<input.length; i++){
-		if(input[i] === '(') { openIndex=i; continue; }
-
         if((i===openIndex+1 && !Number.isInteger(Number(input[i])))
 		|| (i===openIndex+2 && input[i] !== ',')
 		|| (i===openIndex+3 && input[i] !== ' ')
@@ -90,6 +88,8 @@ function checkInputFormat(input){
 		|| (i===openIndex+5 && input[i] !== ')')
 		|| (i===openIndex+6 && input[i] !== ' '))
             return false;
+
+        if(input[i] === '(') { openIndex=i; continue; }
 	}
 
 	return true;
