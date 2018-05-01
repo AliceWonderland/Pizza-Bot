@@ -11,7 +11,6 @@ class PizzaBot{
     }
 
     setDeliveries(input){
-
         if(!this.checkInputFormat(input)){
             console.log('Pizzabot Error! Check your input, please.');
             return;
