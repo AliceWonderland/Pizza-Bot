@@ -1,6 +1,6 @@
 // Javascript ES6
 const args = process.argv;
-let input=args[2] || "5x5 (1, 3) (4, 4)";
+let input=args[2];
 
 function goPizzaBot(input){ //return route
 
