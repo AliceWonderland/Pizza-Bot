@@ -1,6 +1,8 @@
 # Pizza Bot
 Pizza bot gets a list of houses to deliver pizzas to! Yum, pizza!
 
+https://github.com/AliceWonderland/Pizza-Bot.git
+
 ### Installation
 Install [NPM v5.6.0+ and Node v8.9.4+](https://nodejs.org/en/download/)
 
