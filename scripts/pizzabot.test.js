@@ -30,11 +30,13 @@ describe('goPizzaBot', () => {
 	describe('goPizzaBot', () => {
 		// assumes input format is correct
 		test('handles undefined input', () => {
-			expect(goPizzaBot()).toBe('Pizzabot Error! Check your input, please.');
+			expect(goPizzaBot())
+			.toBe('Pizzabot Error! Check your input, please.');
 		});
 
 		test('handles empty string input', () => {
-			expect(goPizzaBot('')).toBe('Pizzabot Error! Check your input, please.');
+			expect(goPizzaBot(''))
+			.toBe('Pizzabot Error! Check your input, please.');
 		});
 
 		//moves horiz, then vert
@@ -43,7 +45,8 @@ describe('goPizzaBot', () => {
 		});
 
 		test('gets correct Route for "5x5 (0, 0) (1, 3) (4, 4) (4, 2) (4, 2) (0, 1) (3, 2) (2, 3) (4, 1)"', () => {
-			expect(goPizzaBot("5x5 (0, 0) (1, 3) (4, 4) (4, 2) (4, 2) (0, 1) (3, 2) (2, 3) (4, 1)")).toBe('DENNNDEEENDSSDDWWWWSDEEENDWNDEESSD');
+			expect(goPizzaBot("5x5 (0, 0) (1, 3) (4, 4) (4, 2) (4, 2) (0, 1) (3, 2) (2, 3) (4, 1)"))
+			.toBe('DENNNDEEENDSSDDWWWWSDEEENDWNDEESSD');
 		});
 	});
 
