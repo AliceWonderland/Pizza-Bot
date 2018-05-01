@@ -1,5 +1,5 @@
 # Pizza Bot
-Pizzabot gets a list of houses to deliver pizzas to! Yum, pizza!
+Pizzabot gets a list of houses to deliver pizzas to! Yum, pizza! (Javascript ES6) 
 
 https://github.com/AliceWonderland/Pizza-Bot.git
 
