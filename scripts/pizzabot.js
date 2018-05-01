@@ -56,9 +56,6 @@ function getDirection(axis,start,end){
 	return (start < end) ? compass.get('up') : compass.get('down');
 }
 
-
-
 console.log(goPizzaBot(input));
-
 
 module.exports = {goPizzaBot, getDeliveries, getDirection};
