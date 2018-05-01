@@ -5,9 +5,9 @@
   "scripts": {
     "pizzabot": "node scripts/pizzabot.js",
     "pizzabot-oop": "node scripts/pizzabot_oop.js",
+    "tests": "jest --watchAll",
     "test": "jest  scripts/pizzabot.test.js --watch",
-    "test-oop": "jest scripts/pizzabot_oop.test.js --watch",
-    "tests": "jest --watchAll"
+    "test-oop": "jest scripts/pizzabot_oop.test.js --watch"
   },
   "devDependencies": {
     "jest": "^22.4.3"
