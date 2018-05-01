@@ -14,7 +14,7 @@ Or unpack files `link to zip`
 
 Install packages using NPM `npm install`
 
-Run tests `npm run test`
+Run tests using Jest `npm run test`
 
 Run manually `node pizzabot.js "5x5 (1, 3) (4, 4)"`
 

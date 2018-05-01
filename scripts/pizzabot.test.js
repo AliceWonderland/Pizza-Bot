@@ -1,8 +1,14 @@
-const { goPizzaBot, getDeliveries, getDirection } = require('./pizzabot');
+const { goPizzaBot, getDeliveries, getDirection, checkInputFormat } = require('./pizzabot');
 
-describe('goPizzaBot', () => {
+describe('goPizzaBot Tests', () => {
 
-    describe('getDeliveries', () => {
+    describe('checkInputFormat', () => {
+		test('checks for missing bracket', () => {
+            expect(checkInputFormat("(1, 3) (4, 4)")).toBeFalsy();
+		});
+	});
+
+	describe('getDeliveries', () => {
 		test('parses input string to array', () => {
 			expect(getDeliveries("5x5 (1, 3) (4, 4)"))
 			.toEqual([ [ 1, 3 ], [ 4, 4 ] ]);
@@ -11,19 +17,19 @@ describe('goPizzaBot', () => {
 
 	describe('getDirection', () => {
 		test('gets Direction for Up', () => {
-			expect(getDirection('x',0,1)).toBe('E');
-		});
-
-		test('gets Direction for Down', () => {
-			expect(getDirection('x',1,0)).toBe('W');
-		});
-
-		test('gets Direction for Left', () => {
 			expect(getDirection('y',0,1)).toBe('N');
 		});
 
-		test('gets Direction for Right', () => {
+		test('gets Direction for Down', () => {
 			expect(getDirection('y',1,0)).toBe('S');
+		});
+
+		test('gets Direction for Left', () => {
+			expect(getDirection('x',1,0)).toBe('W');
+		});
+
+		test('gets Direction for Right', () => {
+			expect(getDirection('x',0,1)).toBe('E');
 		});
 	});
 
