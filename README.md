@@ -23,3 +23,7 @@ Run manually `node pizzabot.js "5x5 (1, 3) (4, 4)"`
 * Environment: Node https://nodejs.org
 * Package Manager: NPM https://www.npmjs.com/
 * Test Suite: Jest https://facebook.github.io/jest/en/
+
+### To Tar and Untar
+* Tar `tar -czvf your-stuff.tar.gz your-stuff`
+* Untar `tar -zxvf your-stuff.tar.gz`
