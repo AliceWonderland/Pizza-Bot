@@ -34,6 +34,15 @@ In the root folder:
 * Package Manager: NPM https://www.npmjs.com/
 * Test Suite: Jest https://facebook.github.io/jest/en/
 
+### Example Command Line Scripts
+See package.json for ready-made scripts
+* `npm run pizzabot "5x5 (1, 3) (4, 4)"` runs pizzabot.js
+* `npm run pizzabot-oop "5x5 (1, 3) (4, 4)"` runs pizzabot_oop.js
+* `npm run tests` runs all tests
+* `npm run test` runs pizzabot.js test
+* `npm run test--oop` runs pizzabot_oop.js test
+* `node pizzabot.js "5x5 (1, 3) (4, 4)"`
+
 ### To Tar and Untar
 * Tar `tar -czvf your-stuff.tar.gz your-stuff`
 * Untar `tar -zxvf your-stuff.tar.gz`
