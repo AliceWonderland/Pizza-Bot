@@ -25,7 +25,6 @@ describe('goPizzaBot Tests', () => {
 	});
 
 	describe('goPizzaBot', () => {
-		// assumes input format is correct
 		test('handles undefined input', () => {
 			expect(goPizzaBot())
 			.toBe('Pizzabot Error! Check your input, please.');
