@@ -4,7 +4,6 @@ const args = process.argv;
 let input=args[2];
 
 function goPizzaBot(input){ //return route
-
 	if(!input || !input.length ) return 'Pizzabot Error! Check your input, please.';
 
 	const grid = input[0];
@@ -43,10 +42,10 @@ function goPizzaBot(input){ //return route
 
 function getDeliveries(input){
 	return input.slice(input.indexOf('(')+1, -1)
-	.split(') (')
-	.map( ele => {
-		return ele.split(', ').map(ele => Number(ele))
-	});
+		.split(') (')
+		.map( ele => {
+			return ele.split(', ').map(ele => Number(ele))
+		});
 }
 
 function getDirection(axis,start,end){
