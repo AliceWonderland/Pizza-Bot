@@ -1,5 +1,5 @@
 # Pizza Bot
-Pizza bot gets a list of houses to deliver pizzas to! Yum, pizza!
+Pizzabot gets a list of houses to deliver pizzas to! Yum, pizza!
 
 https://github.com/AliceWonderland/Pizza-Bot.git
 
@@ -22,20 +22,20 @@ Run manually `node pizzabot.js "5x5 (1, 3) (4, 4)"`
 
 ### Files
 In the `scripts` folder:
-* pizzabot.js + pizzabot.test.js
-* pizzabot_oop.js + pizzabot_oop.test.js
+* `pizzabot.js` + `pizzabot.test.js` pizzabot regular
+* `pizzabot_oop.js` + `pizzabot_oop.test.js` pizzabot in oop
 
 In the root folder:
 * package.json contains list of scripts
 
 ### Tools & Technologies
-* Language: Javascript https://developer.mozilla.org/en-US/docs/Web/JavaScript
+* Language: Javascript ES6 https://developer.mozilla.org/en-US/docs/Web/JavaScript
 * Environment: Node https://nodejs.org
 * Package Manager: NPM https://www.npmjs.com/
 * Test Suite: Jest https://facebook.github.io/jest/en/
 
 ### Example Command Line Scripts
-See package.json for ready-made scripts
+See `package.json` for ready-made scripts
 * `npm run pizzabot "5x5 (1, 3) (4, 4)"` runs pizzabot.js
 * `npm run pizzabot-oop "5x5 (1, 3) (4, 4)"` runs pizzabot_oop.js
 * `npm run tests` runs all tests
