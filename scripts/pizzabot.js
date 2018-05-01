@@ -94,4 +94,4 @@ function checkInputFormat(input){
 
 console.log(goPizzaBot(input));
 
-module.exports = {goPizzaBot, getDeliveries, getDirection, checkInputFormat};
+module.exports = { goPizzaBot, getDeliveries, getDirection, checkInputFormat };
