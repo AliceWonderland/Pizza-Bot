@@ -79,6 +79,12 @@ describe('goPizzaBot Tests', () => {
 		});
 
 		describe('coord check', () => {
+            test('accepts correct input with 1 coord', () => {
+				expect(checkInputFormat("5x5 (1, 3)")).toBeTruthy();
+			});
+			test('accepts correct input with more than 1 coord', () => {
+				expect(checkInputFormat("5x5 (1, 3) (4, 4)")).toBeTruthy();
+			});
 			test('has integer in 1st position', () => {
 				expect(checkInputFormat("5x5 (m, 3) (4, 4)")).toBeFalsy();
 			});
@@ -97,7 +103,6 @@ describe('goPizzaBot Tests', () => {
 			test('has integer in 6th position', () => {
 				expect(checkInputFormat("5x5 (1, 3)(4, 4)")).toBeFalsy();
 			});
-
 		});
 
 	});
