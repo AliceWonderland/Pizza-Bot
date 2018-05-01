@@ -1,5 +1,8 @@
 // Javascript ES6
 
+const args = process.argv;
+let input=args[2];
+
 function goPizzaBot(input){ //return route
 
 	if(!input || !input.length ) return 'Pizzabot Error! Check your input, please.';
@@ -55,9 +58,8 @@ function getDirection(axis,start,end){
 }
 
 
-let input="5x5 (0, 0) (1, 3) (4, 4) (4, 2) (4, 2) (0, 1) (3, 2) (2, 3) (4, 1)";
-input="5x5 (1, 3) (4, 4)"; //=> ENNNDEEEND
-goPizzaBot(input);
+
+console.log(goPizzaBot(input));
 
 
 module.exports = {goPizzaBot, getDeliveries, getDirection};
