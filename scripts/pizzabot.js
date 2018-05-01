@@ -3,7 +3,6 @@ const args = process.argv;
 let input=args[2];
 
 function goPizzaBot(input){ //return route
-
 	// check input format
 	if(!checkInputFormat(input))
 		return 'Pizzabot Error! Check your input, please.';
@@ -26,14 +25,12 @@ function goPizzaBot(input){ //return route
 		// write route
 		while(origX !== destX){
 			route += dirX;
-			if(origX < destX) origX++;
-			else origX--;
+			(origX < destX) ? origX++ : origX--;
 		}
 
 		while(origY !== destY){
 			route += dirY;
-			if(origY < destY) origY++;
-			else origY--;
+			(origY < destY) ? origY++ : origY--;
 		}
 
 		route += 'D';
@@ -61,13 +58,13 @@ function getDirection(axis,start,end){
 
 function checkInputFormat(input){
 	// check basics
-    if(!input || !input.length || input.indexOf('(') < 0 || input.indexOf(')') < 0)
-    	return false;
+	if(!input || !input.length || input.indexOf('(') < 0 || input.indexOf(')') < 0)
+		return false;
 
-    // check 5x5
-    let grid=input.slice(0,4).split('');
-    for(let i=0; i<grid.length; i++){
-        if((i===0 && !Number.isInteger(Number(grid[i])))
+	// check 5x5
+	let grid=input.slice(0,4).split('');
+	for(let i=0; i<grid.length; i++){
+		if((i===0 && !Number.isInteger(Number(grid[i])))
 		|| (i===1 && grid[i] !== 'x')
 		|| (i===2 && !Number.isInteger(Number(grid[i])))
 		|| (i===3 && grid[i] !== ' '))
@@ -81,15 +78,15 @@ function checkInputFormat(input){
 
 	let openIndex=0;
 	for(let i=1; i<input.length; i++){
-        if((i===openIndex+1 && !Number.isInteger(Number(input[i])))
+		if((i===openIndex+1 && !Number.isInteger(Number(input[i])))
 		|| (i===openIndex+2 && input[i] !== ',')
 		|| (i===openIndex+3 && input[i] !== ' ')
 		|| (i===openIndex+4 && !Number.isInteger(Number(input[i])))
 		|| (i===openIndex+5 && input[i] !== ')')
 		|| (i===openIndex+6 && input[i] !== ' '))
-            return false;
+			return false;
 
-        if(input[i] === '(') { openIndex=i; continue; }
+		if(input[i] === '(') { openIndex=i; }
 	}
 
 	return true;
