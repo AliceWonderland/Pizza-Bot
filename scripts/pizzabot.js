@@ -14,11 +14,11 @@ function goPizzaBot(input){ //return route
 	for(let destination of deliveries){
 		//map coords
 		let [origX, origY] = origin,
-		  	[destX, destY] = destination;
+		[destX, destY] = destination;
 
 		// compass direction
 		let dirX = getDirection('x', origX, destX),
-		  	dirY =  getDirection('y', origY, destY);
+		dirY =  getDirection('y', origY, destY);
 
 		// write route
 		while(origX !== destX){
