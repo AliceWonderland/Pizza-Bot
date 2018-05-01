@@ -1,6 +1,6 @@
 // Javascript ES6
 const args = process.argv;
-let input=args[2] || "5x5 (1, 3) (4, 4)";
+let input=args[2];
 
 class PizzaBot{
     constructor(name){
@@ -11,8 +11,11 @@ class PizzaBot{
     }
 
     setDeliveries(input){
-        if(!this.checkInputFormat(input))
-            return 'Pizzabot Error! Check your input, please.';
+
+        if(!this.checkInputFormat(input)){
+            console.log('Pizzabot Error! Check your input, please.');
+            return;
+        }
 
         this.grid = input[0];
         this.deliveries = this.parseDeliveries(input);
@@ -77,7 +80,7 @@ class PizzaBot{
         return (start < end) ? compass.get('up') : compass.get('down');
     }
 
-    static checkInputFormat(input){
+    checkInputFormat(input){
         // check basics
         if(!input || !input.length || input.indexOf('(') < 0 || input.indexOf(')') < 0)
             return false;
@@ -114,11 +117,9 @@ class PizzaBot{
     }
 }
 
-
 var pizzabot=new PizzaBot();
 pizzabot.setDeliveries(input);
 pizzabot.setRoute();
 console.log(pizzabot.getRoute());
-
 
 module.exports = { PizzaBot };

@@ -20,6 +20,14 @@ Run tests using Jest `npm run test`
 
 Run manually `node pizzabot.js "5x5 (1, 3) (4, 4)"`
 
+### Files
+In the `scripts` folder:
+* pizzabot.js + pizzabot.test.js
+* pizzabot_oop.js + pizzabot_oop.test.js
+
+In the root folder:
+* package.json contains list of scripts
+
 ### Tools & Technologies
 * Language: Javascript https://developer.mozilla.org/en-US/docs/Web/JavaScript
 * Environment: Node https://nodejs.org

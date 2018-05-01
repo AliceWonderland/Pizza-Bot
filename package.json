@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "dependencies": {},
   "scripts": {
-    "tests": "jest --watchAll",
+    "pizzabot": "node scripts/pizzabot.js",
+    "pizzabot-oop": "node scripts/pizzabot_oop.js",
     "test": "jest  scripts/pizzabot.test.js --watch",
-    "test-oop": "jest scripts/pizzabot_oop.test.js --watch"
+    "test-oop": "jest scripts/pizzabot_oop.test.js --watch",
+    "tests": "jest --watchAll"
   },
   "devDependencies": {
     "jest": "^22.4.3"
