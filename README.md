@@ -35,7 +35,7 @@ See `package.json` for ready-made scripts
 * `npm run pizzabot-oop "5x5 (1, 3) (4, 4)"` runs pizzabot_oop.js
 * `npm run tests` runs all tests
 * `npm run test` runs pizzabot.js test
-* `npm run test--oop` runs pizzabot_oop.js test
+* `npm run test-oop` runs pizzabot_oop.js test
 * `node pizzabot.js "5x5 (1, 3) (4, 4)"`
 
 ### To Tar and Untar
