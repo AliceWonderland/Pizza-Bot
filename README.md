@@ -26,7 +26,7 @@ In the `scripts` folder:
 * `pizzabot_oop.js` + `pizzabot_oop.test.js` pizzabot in oop
 
 In the root folder:
-* package.json contains list of scripts
+* `package.json` contains list of scripts
 
 ### Tools & Technologies
 * Language: Javascript ES6 https://developer.mozilla.org/en-US/docs/Web/JavaScript
