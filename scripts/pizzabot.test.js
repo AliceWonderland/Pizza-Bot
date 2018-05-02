@@ -40,7 +40,6 @@ describe('goPizzaBot Tests', () => {
         });
     });
 
-
     describe('checkInputFormat', () => {
 
         describe('basic checks', () => {
@@ -101,7 +100,6 @@ describe('goPizzaBot Tests', () => {
         });
 
     });
-
 });
 
 
