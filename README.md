@@ -1,5 +1,9 @@
 # Pizza Bot
-Pizzabot gets a list of houses to deliver pizzas to! Yum, pizza! (Javascript ES6) 
+Pizzabot gets a list of houses to deliver pizzas to! Yum, pizza! (Javascript ES6)
+
+Example Inputs
+* "5x5 (1, 3) (4, 4)" => "ENNNDEEEND"
+* "5x5 (0, 0) (1, 3) (4, 4) (4, 2) (4, 2) (0, 1) (3, 2) (2, 3) (4, 1)" => "DENNNDEEENDSSDDWWWWSDEEENDWNDEESSD"
 
 https://github.com/AliceWonderland/Pizza-Bot.git
 
