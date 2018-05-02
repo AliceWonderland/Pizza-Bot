@@ -70,7 +70,6 @@ class PizzaBot{
         return this.route;
     }
 
-
     getDirection(axis,start,end){
         const compass = new Map([ ['up','N'],['down','S'],['left','W'],['right','E'],['drop','D'] ]);
 
