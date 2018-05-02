@@ -45,7 +45,7 @@ function getDeliveries(input){
     .split(') (')
     .map( ele => {
         return ele.split(', ').map(ele => Number(ele))
-});
+    });
 }
 
 function getDirection(axis,start,end){
