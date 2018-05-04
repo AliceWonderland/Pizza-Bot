@@ -23,7 +23,7 @@ class PizzaBot{
     parseDeliveries(input){
         return input.slice(input.indexOf('(')+1, -1)
             .split(') (')
-            .map( ele => {
+            .map(ele => {
                 return ele.split(', ').map(ele => Number(ele))
             });
     }
